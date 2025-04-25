@@ -1,10 +1,20 @@
 import HomeSvg from "../../icons/Home.svg?react";
-import { SvgIcon } from "@mui/material";
+import { SvgIcon, SvgIconProps } from "@mui/material";
+import { FC } from "react";
 
-console.log("HomeSvg", HomeSvg);
+console.log("HomeSvg", HomeSvg, HomeSvg.displayName);
 
-export const HomeIcon = () => {
-  return <SvgIcon component={HomeSvg} />;
+export const HomeIcon: FC<
+  Omit<SvgIconProps, "component" | "inheritViewBox">
+> = (props) => {
+  return (
+    <SvgIcon
+      component={HomeSvg}
+      inheritViewBox
+      data-testid="HomeIcon"
+      {...props}
+    />
+  );
 
   return (
     <SvgIcon>
@@ -15,3 +25,5 @@ export const HomeIcon = () => {
     </SvgIcon>
   );
 };
+
+console.log("HomeIcon", HomeIcon, HomeIcon.displayName);
