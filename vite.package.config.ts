@@ -22,13 +22,20 @@ export default defineConfig({
       },
     },
     rollupOptions: {
-      external: ["react", "react-dom", "@mui/material", "@mui/material/utils"],
+      external: [
+        "react",
+        "react-dom",
+        "react/jsx-runtime",
+        "@mui/material",
+        "@mui/material/SvgIcon",
+      ],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "jsxRuntime",
           "@mui/material": "MaterialUI",
-          "@mui/material/utils": "MaterialUIUtils",
+          "@mui/material/SvgIcon": "MaterialUISvgIcon",
         },
       },
     },
