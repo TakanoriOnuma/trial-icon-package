@@ -23,7 +23,7 @@ const generateIconComponentText = (fileName: string) => {
   const svgName = iconName + "Svg";
   const componentName = iconName + "Icon";
   return `
-import SvgIcon from "@mui/material/SvgIcon";
+import { SvgIcon } from "@mui/material";
 import type { SvgIconProps } from "@mui/material/SvgIcon";
 import type { FC } from "react";
 
