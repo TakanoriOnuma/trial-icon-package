@@ -3,15 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "index.cjs",
-  "module": "index.mjs",
+  "main": "index.js",
   "types": "index.d.ts",
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "require": "./index.cjs"
+      "import": "./index.js"
     }
   },
+  "sideEffects": false,
   "scripts": {},
   "peerDependencies": {
     "@mui/material": "^5.0.0 || ^6.0.0 || ^7.0.0",
