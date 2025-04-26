@@ -3,6 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
   "scripts": {},
   "peerDependencies": {
     "@mui/material": "^7.0.2",
