@@ -1,5 +1,5 @@
 import { jsx as n } from "react/jsx-runtime";
-import o from "@mui/material/SvgIcon";
+import { SvgIcon as o } from "@mui/material";
 import * as t from "react";
 const c = (e) => /* @__PURE__ */ t.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", ...e }, /* @__PURE__ */ t.createElement("title", null, "account"), /* @__PURE__ */ t.createElement("path", { d: "M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" })), p = (e) => /* @__PURE__ */ n(
   o,
