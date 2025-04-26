@@ -9,17 +9,8 @@ export default defineConfig({
     lib: {
       entry: "./src/index.ts",
       name: "MyIconLibrary",
-      formats: ["es", "cjs"],
-      fileName: (format) => {
-        switch (format) {
-          case "es":
-            return "index.mjs";
-          case "cjs":
-            return "index.cjs";
-          default:
-            return "index.js";
-        }
-      },
+      formats: ["es"],
+      fileName: "index",
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime", "@mui/material"],
