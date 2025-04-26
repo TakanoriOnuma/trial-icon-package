@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate": "tsx generateIconComponents.ts",
+    "generate-icons": "tsx generateIconComponents.ts",
     "build:vite": "vite build -c vite.package.config.ts",
     "build:tsc": "tsc --project tsconfig.package.json",
     "build:copy": "cp src/package.json dist/",
