@@ -3,10 +3,13 @@ import { FC, SVGProps } from "react";
 
 type SvgComponent = FC<SVGProps<SVGSVGElement>>;
 
-const icons = import.meta.glob<{ default: SvgComponent }>("../../icons/*.svg", {
-  eager: true,
-  query: "react",
-});
+const icons = import.meta.glob<{ default: SvgComponent }>(
+  "../../src/icons/*.svg",
+  {
+    eager: true,
+    query: "react",
+  },
+);
 
 /**
  * パスカルケースに変換する

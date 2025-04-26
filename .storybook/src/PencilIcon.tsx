@@ -1,4 +1,4 @@
-import PencilSvg from "../../icons/pencil.svg?react";
+import PencilSvg from "../../src/icons/pencil.svg?react";
 import { createSvgIcon } from "@mui/material/utils";
 
 export const PencilIcon = createSvgIcon(

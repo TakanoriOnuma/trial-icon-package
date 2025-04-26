@@ -1,4 +1,4 @@
-import HomeSvg from "../../icons/Home.svg?react";
+import HomeSvg from "../../src/icons/Home.svg?react";
 import { SvgIcon, SvgIconProps } from "@mui/material";
 import { FC } from "react";
 
